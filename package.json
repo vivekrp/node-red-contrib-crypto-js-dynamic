@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-crypto-js-dynamic",
-  "version": "0.1.20",
+  "version": "0.1.21",
   "description": "Node-RED nodes using CryptoJS to encrypt and decrypt messages",
   "repository": {
     "type": "git",

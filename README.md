@@ -1,21 +1,21 @@
 <!--
- * @Author: Drswith
- * @Date: 2020-10-13 10:41:34
- * @LastEditTime: 2020-10-20 12:46:41
+ * @Author: vivekrp
+ * @Date: 2021-04-04 03:20:00
+ * @LastEditTime: 2021-04-04 03:20:00
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
- * @FilePath: \node-red-contrib-crypto-js-plus\README.md
+ * @FilePath: \node-red-contrib-crypto-js-dynamic\README.md
 -->
 # NOTICE
-This repo is forked from https://github.com/baumblatt/node-red-contrib-crypto-js
+This repo is forked from https://github.com/Drswith/node-red-contrib-crypto-js-plus and https://github.com/baumblatt/node-red-contrib-crypto-js
 
-And fixed sha1 algorithm at Digest Node(See https://github.com/baumblatt/node-red-contrib-crypto-js/issues/7)
+And added dynamic secret key option for HMAC.
 
-# node-red-contrib-crypto-js-plus
+# node-red-contrib-crypto-js-dynamic
 Node-RED nodes using CryptoJS to encrypt and decrypt messages
 
 # Install
-`npm install node-red-contrib-crypto-js-plus`
+`npm install node-red-contrib-crypto-js-dynamic`
 
 
 # Sample Flows
@@ -23,7 +23,7 @@ Node-RED nodes using CryptoJS to encrypt and decrypt messages
 
 You can have access to this samples flows on `samples/flows.json` file.
 
-Note: User defined Secret Key can be overridden by sending a msg.secrectkey containing the key value you wish.
+**Note: User defined Secret Key can be overridden by sending a msg.secrectkey containing the key value you wish.**
 
 # CryptoJS 
 > JavaScript library of crypto standards.

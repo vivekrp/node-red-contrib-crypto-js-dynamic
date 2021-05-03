@@ -1,10 +1,10 @@
 {
-  "name": "node-red-contrib-crypto-js-plus",
-  "version": "0.1.10",
+  "name": "node-red-contrib-crypto-js-dynamic",
+  "version": "0.1.20",
   "description": "Node-RED nodes using CryptoJS to encrypt and decrypt messages",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Drswith/node-red-contrib-crypto-js-plus.git"
+    "url": "git+https://github.com/vivekrp/node-red-contrib-crypto-js-dynamic.git"
   },
   "scripts": {
     "test": "node-red"
@@ -12,12 +12,12 @@
   "keywords": [
     "node-red"
   ],
-  "author": "Drswith",
+  "author": "vivekrp",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Drswith/node-red-contrib-crypto-js-plus/issues"
   },
-  "homepage": "https://github.com/Drswith/node-red-contrib-crypto-js-plus#readme",
+  "homepage": "https://github.com/Drswith/node-red-contrib-crypto-js-dynamic#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
   },

@@ -15,9 +15,9 @@
   "author": "vivekrp",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Drswith/node-red-contrib-crypto-js-plus/issues"
+    "url": "https://github.com/vivekrp/node-red-contrib-crypto-js-dynamic/issues"
   },
-  "homepage": "https://github.com/Drswith/node-red-contrib-crypto-js-dynamic#readme",
+  "homepage": "https://github.com/vivekrp/node-red-contrib-crypto-js-dynamic#readme",
   "dependencies": {
     "crypto-js": "^3.1.9-1"
   },

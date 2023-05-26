@@ -10,8 +10,8 @@ module.exports = function (RED) {
 
 		node.on('input', function (msg) {
 			// first check if secret key was sent via msg first. If true overwrite user entered secret key in configuration.
-			if(msg.secrectkey) {
-				node.key = msg.secrectkey;
+			if(msg.secretkey) {
+				node.key = msg.secretkey;
 			}
 			// check configurations
 			if(!node.algorithm || !node.key) {

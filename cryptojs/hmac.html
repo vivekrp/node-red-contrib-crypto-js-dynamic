@@ -3,7 +3,7 @@
 		category: 'function',
 		color: '#a6bbcf',
 		defaults: {
-			name: {value: ''}, algorithm: {value: '', required: true}, key: {value: '', required: true}
+			name: {value: ''}, algorithm: {value: '', required: true}, key: {value: '', required: true}, isSecretKeyHex: {value: false}
 		},
 		inputs: 1,
 		outputs: 1,
@@ -35,6 +35,10 @@
     <div class="form-row">
         <label for="node-input-key"><i class="icon-tag"></i> Secret Key</label>
         <input type="text" id="node-input-key" placeholder="Secret Key">
+    </div>
+    <div class="form-row">
+        <label for="node-input-isSecretKeyHex"><i class="icon-tag"></i> Interpret Secret Key as hex string</label>
+        <input type="checkbox" id="node-input-isSecretKeyHex">
     </div>
 </script>
 

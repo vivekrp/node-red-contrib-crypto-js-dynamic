@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/vivekrp/node-red-contrib-crypto-js-dynamic#readme",
   "dependencies": {
-    "crypto-js": "^3.1.9-1"
+    "crypto-js": "^4.2.0"
   },
   "node-red": {
     "nodes": {

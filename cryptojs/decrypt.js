@@ -21,7 +21,7 @@ module.exports = function (RED) {
 				// check the payload
 				if(msg.payload) {
 					// debugging message
-					node.debug('Encrypting payload using '+node.algorithm);
+					node.debug('Decrypting payload using '+node.algorithm);
 					// decrypt with CryptoJS
 					var bytes = CryptoJS[node.algorithm].decrypt(msg.payload, node.key);
 					msg.payload = bytes.toString(CryptoJS.enc.Utf8);

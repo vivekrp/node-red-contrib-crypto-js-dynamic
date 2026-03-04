@@ -9,12 +9,10 @@ module.exports = function (RED) {
 		node.key = config.key;
 
 		node.on('input', function (msg) {
-			// first check if secret key was sent via msg first. If true overwrite user entered secret key in configuration.
-			if(msg.secretkey) {
-				node.key = msg.secretkey;
-			}
+			// first check if secret key was sent via msg first. If true use it for this message only.
+			var key = msg.secretkey || node.key;
 			// check configurations
-			if(!node.algorithm || !node.key) {
+			if(!node.algorithm || !key) {
 				// rising misconfiguration error
 				node.error("Missing configuration, please check your algorithm or key.", msg);
 			} else {
@@ -23,7 +21,7 @@ module.exports = function (RED) {
 					// debugging message
 					node.debug('Creating a digest of payload using '+node.algorithm);
 					// digest with CryptoJS
-					msg.payload = CryptoJS[node.algorithm](msg.payload, node.key).toString();
+					msg.payload = CryptoJS[node.algorithm](msg.payload, key).toString();
 				} else {
 					// debugging message
 					node.trace('Nothing to digest: empty payload');

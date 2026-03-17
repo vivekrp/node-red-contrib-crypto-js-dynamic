@@ -13,6 +13,13 @@ module.exports = function (RED) {
 			if(msg.secretkey) {
 				node.key = msg.secretkey;
 			}
+			if(msg.isSecretKeyHex !== undefined
+				&& typeof msg.isSecretKeyHex == "boolean") {
+				config.isSecretKeyHex = msg.isSecretKeyHex;
+			}
+			if(config.isSecretKeyHex) {
+				node.key = CryptoJS.enc.Hex.parse(node.key);
+			}
 			// check configurations
 			if(!node.algorithm || !node.key) {
 				// rising misconfiguration error
